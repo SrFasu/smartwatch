@@ -429,6 +429,7 @@ p{
         position: absolute;
         top: 25%;
         left: 15%;
+        
     }
     
     .contacto{
@@ -492,7 +493,8 @@ p{
     
         .container{
             position: absolute;
-            left: -8%;
+            left: 0%;
+            width: 580px;
         }
     
         .contacto{
@@ -542,5 +544,65 @@ p{
             position: absolute;
             left: 10%;
             width: 380px;
+        }
+    }
+
+    @media(max-width:380px){
+        body{
+            background-image: url(fondo2.jpg) ;
+        }
+    
+        .reloj__tiempo{
+            letter-spacing: 0.05em;
+            font-size: 4rem;
+            padding: 4px 0;
+        }
+
+        nav{
+            font-size: 1rem;
+        }
+
+        .reloj__fecha{
+            letter-spacing: 0.1em;
+            font-size: 1.8rem;
+        }
+    
+        .crono{
+            position: absolute;
+            left: 0%;
+        }
+    
+        .crono__tiempo{
+            font-size: 3rem;
+        }
+        
+        .crono__controles button{
+            font-size: 1rem;
+        }
+
+        .container{
+            position: absolute;
+            left: -1%;
+            width: 360px;
+        }
+
+        .tempo__label{
+            font-size: 1.9rem;
+        }
+    
+        .tempo__tiempo{
+            font-family: 'Share Tech Mono', monospace;
+            width: 50px;
+        }
+
+        .tempo__btn{
+            width: 70px;
+            font-size: 1.1rem;
+        }
+    
+        .contacto{
+            position: absolute;
+            left: 5%;
+            width: 330px;
         }
     }
