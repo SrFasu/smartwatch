@@ -7,6 +7,7 @@ import Horario from './componentes/Horario/Horario';
 import Cronometro from './componentes/Cronometro/Cronometro';
 import Temporalizador from './componentes/Temporizador/Temporalizador';
 import Contacto from './componentes/Contacto/Contacto';
+import Contacto2 from './componentes/Contacto/Contacto2';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
             
           <Route path="/temporizador" element={<Temporalizador/>}/>
             
-          <Route path="/contacto" element={<Contacto/>}/>
+          <Route path="/contacto" element={<Contacto2/>}/>
         </Routes>
 
       </BrowserRouter>
