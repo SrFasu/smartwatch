@@ -10,7 +10,12 @@ const Horario = () =>  {
         setCurrentTime(time);
     }
 
-    setInterval(updateTime);
+    
+    setInterval(() => {
+        updateTime()
+    }, 1000);
+
+
 
     let date = new Date().toLocaleDateString();
 
