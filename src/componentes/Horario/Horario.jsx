@@ -1,9 +1,8 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const Horario = () =>  {
-    let time = new Date().toLocaleTimeString();
-    const [, setCurrentTime] = useState(time);
+    
+    const [currentTime, setCurrentTime] = useState(new Date().toLocaleTimeString());
 
     const updateTime = () => {
         let time = new Date().toLocaleTimeString();
@@ -21,7 +20,7 @@ const Horario = () =>  {
 
     return(
         <div className="reloj">
-        <p className="reloj__tiempo">{time}</p>
+        <p className="reloj__tiempo">{currentTime}</p>
         <p className="reloj__fecha">{date}</p>
     </div>
     );
